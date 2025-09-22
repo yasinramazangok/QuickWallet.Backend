@@ -1,11 +1,52 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserService", "UserService", "{B45E9F45-61A7-4B97-82A1-818D336A5385}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickWallet.UserService.Application", "Services\UserService\QuickWallet.UserService.Application\QuickWallet.UserService.Application.csproj", "{EB467142-4C10-48A8-AAB6-0D581CC1BCC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickWallet.UserService.Core", "Services\UserService\QuickWallet.UserService.Core\QuickWallet.UserService.Core.csproj", "{979D4AC6-D5FB-4D74-AFBB-B3566CB17980}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickWallet.UserService.Infrastructure", "Services\UserService\QuickWallet.UserService.Infrastructure\QuickWallet.UserService.Infrastructure.csproj", "{0FBDAF33-A5A8-47BA-9970-E3A2107F170F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickWallet.UserService.Api", "Services\UserService\QuickWallet.UserService.Api\QuickWallet.UserService.Api.csproj", "{DEDDDD32-BAD1-4F82-835E-8AD619FE5D35}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB467142-4C10-48A8-AAB6-0D581CC1BCC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB467142-4C10-48A8-AAB6-0D581CC1BCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB467142-4C10-48A8-AAB6-0D581CC1BCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB467142-4C10-48A8-AAB6-0D581CC1BCC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979D4AC6-D5FB-4D74-AFBB-B3566CB17980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979D4AC6-D5FB-4D74-AFBB-B3566CB17980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979D4AC6-D5FB-4D74-AFBB-B3566CB17980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979D4AC6-D5FB-4D74-AFBB-B3566CB17980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FBDAF33-A5A8-47BA-9970-E3A2107F170F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FBDAF33-A5A8-47BA-9970-E3A2107F170F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FBDAF33-A5A8-47BA-9970-E3A2107F170F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBDAF33-A5A8-47BA-9970-E3A2107F170F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEDDDD32-BAD1-4F82-835E-8AD619FE5D35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDDDD32-BAD1-4F82-835E-8AD619FE5D35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDDDD32-BAD1-4F82-835E-8AD619FE5D35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDDDD32-BAD1-4F82-835E-8AD619FE5D35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B45E9F45-61A7-4B97-82A1-818D336A5385} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EB467142-4C10-48A8-AAB6-0D581CC1BCC8} = {B45E9F45-61A7-4B97-82A1-818D336A5385}
+		{979D4AC6-D5FB-4D74-AFBB-B3566CB17980} = {B45E9F45-61A7-4B97-82A1-818D336A5385}
+		{0FBDAF33-A5A8-47BA-9970-E3A2107F170F} = {B45E9F45-61A7-4B97-82A1-818D336A5385}
+		{DEDDDD32-BAD1-4F82-835E-8AD619FE5D35} = {B45E9F45-61A7-4B97-82A1-818D336A5385}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB69AD10-E031-45D1-A02D-C7D1CE405892}
