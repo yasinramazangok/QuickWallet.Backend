@@ -1,3 +1,4 @@
+using QuickWallet.UserService.Infrastructure.Persistence;
 
 namespace QuickWallet.UserService.Api
 {
@@ -6,6 +7,9 @@ namespace QuickWallet.UserService.Api
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            var connectionString = builder.Configuration.GetConnectionString("UserDb");
+            builder.Services.AddUserServiceInfrastructure(connectionString);
 
             // Add services to the container.
 

@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\QuickWallet.UserService.Application\QuickWallet.UserService.Application.csproj" />
     <ProjectReference Include="..\QuickWallet.UserService.Core\QuickWallet.UserService.Core.csproj" />
   </ItemGroup>
 
