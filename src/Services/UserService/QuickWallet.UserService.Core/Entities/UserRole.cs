@@ -16,10 +16,12 @@ namespace QuickWallet.UserService.Core.Entities
 
         private UserRole() { }
 
-        public UserRole(Guid userId, Guid roleId)
+        public UserRole(User user, Role role)
         {
-            UserId = userId;
-            RoleId = roleId;
+            User = user;
+            UserId = user.Id;
+            Role = role;
+            RoleId = role.Id;
         }
     }
 }

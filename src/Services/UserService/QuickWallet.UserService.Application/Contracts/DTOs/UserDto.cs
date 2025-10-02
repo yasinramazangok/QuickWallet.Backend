@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuickWallet.UserService.Application.Contracts.DTOs
 {
-    public class UserDto
+    public record UserDto
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = default!;
