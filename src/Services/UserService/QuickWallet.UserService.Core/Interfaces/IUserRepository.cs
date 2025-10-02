@@ -1,4 +1,5 @@
 ﻿using QuickWallet.UserService.Core.Entities;
+using QuickWallet.UserService.Core.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace QuickWallet.UserService.Core.Interfaces
 {
     public interface IUserRepository : IRepository<User>
     {
-        Task<User?> GetByEmailAsync(string email);
+        Task<User?> GetByEmailAsync(Email email);
     }
 }

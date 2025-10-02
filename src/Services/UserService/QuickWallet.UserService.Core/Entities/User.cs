@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuickWallet.UserService.Core.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace QuickWallet.UserService.Core.Entities
     {
         public Guid Id { get; private set; }
         public string FullName { get; private set; }
-        public string Email { get; private set; }
+        public Email Email { get; private set; }
         public string PasswordHash { get; private set; }
         public bool IsActive { get; private set; } = true;
         public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
@@ -18,9 +19,9 @@ namespace QuickWallet.UserService.Core.Entities
         // Navigation
         public ICollection<UserRole> UserRoles { get; private set; } = new List<UserRole>();
 
-        private User() { } // EF için
+        private User() { } // for EF Core
 
-        public User(string fullName, string email, string passwordHash)
+        public User(string fullName, Email email, string passwordHash)
         {
             Id = Guid.NewGuid();
             FullName = fullName;

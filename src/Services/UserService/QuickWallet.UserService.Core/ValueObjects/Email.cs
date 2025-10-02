@@ -11,6 +11,8 @@ namespace QuickWallet.UserService.Core.ValueObjects
     {
         public string Value { get; }
 
+        private Email() { }
+
         public Email(string value)
         {
             if (string.IsNullOrWhiteSpace(value))
